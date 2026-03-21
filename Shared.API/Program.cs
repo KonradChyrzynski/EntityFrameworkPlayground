@@ -34,4 +34,45 @@ app.MapGet("/", () => "Hello World!");
 
 app.MapGet("/BudgetCategories", async (SharedDbContext db) => await db.BudgetCategories.ToListAsync());
 
+app.MapPost(
+    "/BudgetCategories",
+    async (SharedDbContext db, BudgetCategory budgetCategory) =>
+    {
+        await db.BudgetCategories.AddAsync(budgetCategory);
+        await db.SaveChangesAsync();
+        return Results.Created($"/BudgetCategories/{budgetCategory.BudgetCategoryId}", budgetCategory);
+    }
+);
+
+app.MapPut(
+    "/BudgetCategories/{id}",
+    async (SharedDbContext db, BudgetCategory updateCategory, int id) =>
+    {
+        var category = await db.BudgetCategories.FindAsync(id);
+        if (category is null)
+            return Results.NotFound();
+        category.Name = updateCategory.Name;
+        category.Description = updateCategory.Description;
+        await db.SaveChangesAsync();
+        return Results.NoContent();
+    }
+);
+
+app.MapDelete(
+    "/BudgetCategories/{id}",
+    async (SharedDbContext db, int id) =>
+    {
+        var category = await db.BudgetCategories.FindAsync(id);
+        if (category is null)
+        {
+            return Results.NotFound();
+        }
+        db.BudgetCategories.Remove(category);
+        await db.SaveChangesAsync();
+        return Results.Ok();
+    }
+);
+
+app.MapGet("/BudgetCategories/{id}", async (SharedDbContext db, int id) => await db.BudgetCategories.FindAsync(id));
+
 app.Run();
