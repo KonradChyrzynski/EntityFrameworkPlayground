@@ -5,6 +5,9 @@ using Shared.API.Models;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddEndpointsApiExplorer();
+
+var connectionString = builder.Configuration.GetConnectionString("Shared") ?? "Data Source=Shared.db";
+
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc(
@@ -18,7 +21,9 @@ builder.Services.AddSwaggerGen(c =>
     );
 });
 
-builder.Services.AddDbContext<SharedDbContext>(options => options.UseInMemoryDatabase("items"));
+builder.Services.AddSqlite<SharedDbContext>(connectionString);
+
+// builder.Services.AddDbContext<SharedDbContext>(options => options.UseInMemoryDatabase("items"));
 
 var app = builder.Build();
 if (app.Environment.IsDevelopment())
