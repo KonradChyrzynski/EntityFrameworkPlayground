@@ -14,8 +14,8 @@ builder.Services.AddSwaggerGen(c =>
         "v1",
         new OpenApiInfo
         {
-            Title = "PizzaStore API",
-            Description = "Making the Pizzas you love",
+            Title = "Shared API",
+            Description = "",
             Version = "v1",
         }
     );
