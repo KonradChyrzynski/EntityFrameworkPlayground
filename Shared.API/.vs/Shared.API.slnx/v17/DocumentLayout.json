@@ -1,0 +1,109 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\KonradChyrzynski\\OneDrive\\MyApps\\EntityFrameworkPlayground\\Shared.API\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{50309B40-87FF-FD4F-6763-8C188082E4F4}|Shared.API.csproj|c:\\users\\konradchyrzynski\\onedrive\\myapps\\entityframeworkplayground\\shared.api\\models\\budgetcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50309B40-87FF-FD4F-6763-8C188082E4F4}|Shared.API.csproj|solutionrelative:models\\budgetcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50309B40-87FF-FD4F-6763-8C188082E4F4}|Shared.API.csproj|c:\\users\\konradchyrzynski\\onedrive\\myapps\\entityframeworkplayground\\shared.api\\migrations\\shareddbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50309B40-87FF-FD4F-6763-8C188082E4F4}|Shared.API.csproj|solutionrelative:migrations\\shareddbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50309B40-87FF-FD4F-6763-8C188082E4F4}|Shared.API.csproj|c:\\users\\konradchyrzynski\\onedrive\\myapps\\entityframeworkplayground\\shared.api\\migrations\\20260322113803_initialcreate.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50309B40-87FF-FD4F-6763-8C188082E4F4}|Shared.API.csproj|solutionrelative:migrations\\20260322113803_initialcreate.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50309B40-87FF-FD4F-6763-8C188082E4F4}|Shared.API.csproj|c:\\users\\konradchyrzynski\\onedrive\\myapps\\entityframeworkplayground\\shared.api\\migrations\\20260322113803_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50309B40-87FF-FD4F-6763-8C188082E4F4}|Shared.API.csproj|solutionrelative:migrations\\20260322113803_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50309B40-87FF-FD4F-6763-8C188082E4F4}|Shared.API.csproj|c:\\users\\konradchyrzynski\\onedrive\\myapps\\entityframeworkplayground\\shared.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50309B40-87FF-FD4F-6763-8C188082E4F4}|Shared.API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BudgetCategory.cs",
+              "DocumentMoniker": "C:\\Users\\KonradChyrzynski\\OneDrive\\MyApps\\EntityFrameworkPlayground\\Shared.API\\Models\\BudgetCategory.cs",
+              "RelativeDocumentMoniker": "Models\\BudgetCategory.cs",
+              "ToolTip": "C:\\Users\\KonradChyrzynski\\OneDrive\\MyApps\\EntityFrameworkPlayground\\Shared.API\\Models\\BudgetCategory.cs",
+              "RelativeToolTip": "Models\\BudgetCategory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-03T18:44:13.134Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SharedDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\KonradChyrzynski\\OneDrive\\MyApps\\EntityFrameworkPlayground\\Shared.API\\Migrations\\SharedDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "Migrations\\SharedDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\KonradChyrzynski\\OneDrive\\MyApps\\EntityFrameworkPlayground\\Shared.API\\Migrations\\SharedDbContextModelSnapshot.cs",
+              "RelativeToolTip": "Migrations\\SharedDbContextModelSnapshot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-03T18:44:02.064Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "20260322113803_InitialCreate.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\KonradChyrzynski\\OneDrive\\MyApps\\EntityFrameworkPlayground\\Shared.API\\Migrations\\20260322113803_InitialCreate.Designer.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260322113803_InitialCreate.Designer.cs",
+              "ToolTip": "C:\\Users\\KonradChyrzynski\\OneDrive\\MyApps\\EntityFrameworkPlayground\\Shared.API\\Migrations\\20260322113803_InitialCreate.Designer.cs",
+              "RelativeToolTip": "Migrations\\20260322113803_InitialCreate.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-03T18:44:01.965Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "20260322113803_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\KonradChyrzynski\\OneDrive\\MyApps\\EntityFrameworkPlayground\\Shared.API\\Migrations\\20260322113803_InitialCreate.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260322113803_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\KonradChyrzynski\\OneDrive\\MyApps\\EntityFrameworkPlayground\\Shared.API\\Migrations\\20260322113803_InitialCreate.cs",
+              "RelativeToolTip": "Migrations\\20260322113803_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-03T18:44:01.858Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\KonradChyrzynski\\OneDrive\\MyApps\\EntityFrameworkPlayground\\Shared.API\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\KonradChyrzynski\\OneDrive\\MyApps\\EntityFrameworkPlayground\\Shared.API\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-03T18:35:49.259Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

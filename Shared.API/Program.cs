@@ -1,4 +1,7 @@
+using System.Text;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using Shared.API.Models;
 
@@ -23,9 +26,40 @@ builder.Services.AddSwaggerGen(c =>
 
 builder.Services.AddSqlite<SharedDbContext>(connectionString);
 
-// builder.Services.AddDbContext<SharedDbContext>(options => options.UseInMemoryDatabase("items"));
+builder.Services.AddDbContext<SharedDbContext>(options => options.UseInMemoryDatabase("items"));
+
+var tokenOptions = builder.Configuration.GetSection(TokenOptions.CONFIG_NAME).Get<TokenOptions>();
+
+builder.Services.Configure<TokenOptions>(builder.Configuration.GetSection(TokenOptions.CONFIG_NAME));
+
+builder
+    .Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(o =>
+    {
+        o.TokenValidationParameters = new TokenValidationParameters
+        {
+            ClockSkew = TimeSpan.FromMinutes(1),
+            IgnoreTrailingSlashWhenValidatingAudience = true,
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(tokenOptions.SigningKey)),
+            ValidateIssuerSigningKey = tokenOptions.ValidateSigningKey,
+            RequireExpirationTime = true,
+            RequireAudience = true,
+            RequireSignedTokens = true,
+            ValidateAudience = true,
+            ValidateIssuer = true,
+            ValidateLifetime = true,
+            ValidAudience = tokenOptions.Audience,
+            ValidIssuer = tokenOptions.Issuer,
+        };
+    });
 
 var app = builder.Build();
+
+app.UseHttpsRedirection();
+
+app.UseAuthentication();
+app.UseAuthorization();
+
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
