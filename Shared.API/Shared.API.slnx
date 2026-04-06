@@ -1,3 +1,5 @@
 <Solution>
+  <Project Path="../Shared.API.IntegrationTests/Shared.API.IntegrationTests.csproj" />
+  <Project Path="../Shared.API.UnitTests/Shared.API.UnitTests.csproj" />
   <Project Path="Shared.API.csproj" />
 </Solution>
