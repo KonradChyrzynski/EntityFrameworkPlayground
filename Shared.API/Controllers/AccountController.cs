@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Shared.API.Services;
 using Shared.API.Tokens;
 
-namespace Shared.API.Controller
+namespace Shared.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

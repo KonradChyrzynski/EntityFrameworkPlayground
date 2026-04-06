@@ -15,6 +15,7 @@ public class TokenService(IOptions<TokenOptions> tokenOptions)
     {
         var expiry = DateTimeOffset.Now.AddMinutes(15);
         var userClaims = GetClaimsForUser(1);
+
         return CreateToken(expiry, userClaims);
     }
 
@@ -22,6 +23,7 @@ public class TokenService(IOptions<TokenOptions> tokenOptions)
     {
         var expiry = DateTimeOffset.Now.AddDays(30);
         var userClaims = GetClaimsForUser(1);
+
         return CreateToken(expiry, userClaims);
     }
 
