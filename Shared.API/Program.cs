@@ -32,8 +32,7 @@ var tokenOptions = builder.Configuration.GetSection(TokenOptions.CONFIG_NAME).Ge
 
 builder.Services.Configure<TokenOptions>(builder.Configuration.GetSection(TokenOptions.CONFIG_NAME));
 
-builder
-    .Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(o =>
     {
         o.TokenValidationParameters = new TokenValidationParameters
@@ -52,6 +51,8 @@ builder
             ValidIssuer = tokenOptions.Issuer,
         };
     });
+
+builder.Services.AddAuthorization();
 
 var app = builder.Build();
 
